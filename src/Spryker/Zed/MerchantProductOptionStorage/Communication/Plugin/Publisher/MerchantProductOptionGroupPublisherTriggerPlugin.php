@@ -83,12 +83,6 @@ class MerchantProductOptionGroupPublisherTriggerPlugin extends AbstractPlugin im
         return static::COL_ID_MERCHANT_PRODUCT_OPTION_GROUP;
     }
 
-    /**
-     * @param int $offset
-     * @param int $limit
-     *
-     * @return \Generated\Shared\Transfer\MerchantProductOptionGroupCriteriaTransfer
-     */
     protected function createMerchantProductOptionGroupCriteriaTransfer(int $offset, int $limit): MerchantProductOptionGroupCriteriaTransfer
     {
         return (new MerchantProductOptionGroupCriteriaTransfer())

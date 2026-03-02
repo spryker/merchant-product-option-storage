@@ -23,9 +23,6 @@ use Spryker\Zed\MerchantProductOptionStorage\MerchantProductOptionStorageDepende
  */
 class MerchantProductOptionStorageBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantProductOptionStorage\Business\Filter\MerchantProductOptionFilterInterface
-     */
     public function createMerchantProductOptionFilter(): MerchantProductOptionFilterInterface
     {
         return new MerchantProductOptionFilter(
@@ -34,9 +31,6 @@ class MerchantProductOptionStorageBusinessFactory extends AbstractBusinessFactor
         );
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantProductOptionStorage\Business\Writer\MerchantProductOptionStorageWriterInterface
-     */
     public function createMerchantProductOptionStorageWriter(): MerchantProductOptionStorageWriterInterface
     {
         return new MerchantProductOptionStorageWriter(
@@ -46,25 +40,16 @@ class MerchantProductOptionStorageBusinessFactory extends AbstractBusinessFactor
         );
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToEventBehaviorFacadeInterface
-     */
     public function getEventBehaviorFacade(): MerchantProductOptionStorageToEventBehaviorFacadeInterface
     {
         return $this->getProvidedDependency(MerchantProductOptionStorageDependencyProvider::FACADE_EVENT_BEHAVIOR);
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToProductOptionStorageFacadeInterface
-     */
     public function getProductOptionStorageFacade(): MerchantProductOptionStorageToProductOptionStorageFacadeInterface
     {
         return $this->getProvidedDependency(MerchantProductOptionStorageDependencyProvider::FACADE_PRODUCT_OPTION_STORAGE);
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToMerchantProductOptionFacadeInterface
-     */
     public function getMerchantProductOptionFacade(): MerchantProductOptionStorageToMerchantProductOptionFacadeInterface
     {
         return $this->getProvidedDependency(MerchantProductOptionStorageDependencyProvider::FACADE_MERCHANT_PRODUCT_OPTION);

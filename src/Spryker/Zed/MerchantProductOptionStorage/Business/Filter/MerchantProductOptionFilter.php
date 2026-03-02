@@ -31,10 +31,6 @@ class MerchantProductOptionFilter implements MerchantProductOptionFilterInterfac
      */
     protected $merchantProductOptionFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantProductOptionStorage\Persistence\MerchantProductOptionStorageRepositoryInterface $merchantProductOptionStorageRepository
-     * @param \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToMerchantProductOptionFacadeInterface $merchantProductOptionFacade
-     */
     public function __construct(
         MerchantProductOptionStorageRepositoryInterface $merchantProductOptionStorageRepository,
         MerchantProductOptionStorageToMerchantProductOptionFacadeInterface $merchantProductOptionFacade

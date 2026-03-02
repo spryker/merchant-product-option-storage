@@ -28,11 +28,6 @@ class MerchantProductOptionStorageWriter implements MerchantProductOptionStorage
      */
     protected $productOptionStorageFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToEventBehaviorFacadeInterface $eventBehaviorFacade
-     * @param \Spryker\Zed\MerchantProductOptionStorage\Persistence\MerchantProductOptionStorageRepositoryInterface $merchantProductOptionStorageRepository
-     * @param \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToProductOptionStorageFacadeInterface $productOptionStorageFacade
-     */
     public function __construct(
         MerchantProductOptionStorageToEventBehaviorFacadeInterface $eventBehaviorFacade,
         MerchantProductOptionStorageRepositoryInterface $merchantProductOptionStorageRepository,

@@ -18,9 +18,6 @@ use Spryker\Zed\MerchantProductOptionStorage\MerchantProductOptionStorageDepende
  */
 class MerchantProductOptionStorageCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantProductOptionStorage\Dependency\Facade\MerchantProductOptionStorageToMerchantProductOptionFacadeInterface
-     */
     public function getMerchantProductOptionFacade(): MerchantProductOptionStorageToMerchantProductOptionFacadeInterface
     {
         return $this->getProvidedDependency(MerchantProductOptionStorageDependencyProvider::FACADE_MERCHANT_PRODUCT_OPTION);

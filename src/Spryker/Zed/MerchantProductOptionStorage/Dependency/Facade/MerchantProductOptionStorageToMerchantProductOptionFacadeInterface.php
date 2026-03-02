@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\MerchantProductOptionGroupCriteriaTransfer;
 
 interface MerchantProductOptionStorageToMerchantProductOptionFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantProductOptionGroupCriteriaTransfer $merchantProductOptionGroupCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantProductOptionGroupCollectionTransfer
-     */
     public function getMerchantProductOptionGroupCollection(
         MerchantProductOptionGroupCriteriaTransfer $merchantProductOptionGroupCriteriaTransfer
     ): MerchantProductOptionGroupCollectionTransfer;

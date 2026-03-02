@@ -36,9 +36,6 @@ class MerchantProductOptionStorageFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testFilterProductOptionsSuccess(): void
     {
         // Arrange
