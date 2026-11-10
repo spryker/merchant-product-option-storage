@@ -7,9 +7,9 @@
 
 namespace Spryker\Shared\MerchantProductOptionStorage;
 
-use Spryker\Shared\Kernel\AbstractBundleConfig;
+use Spryker\Shared\Kernel\AbstractSharedConfig;
 
-class MerchantProductOptionStorageConfig extends AbstractBundleConfig
+class MerchantProductOptionStorageConfig extends AbstractSharedConfig
 {
     /**
      * Specification:
